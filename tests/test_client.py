@@ -3,8 +3,8 @@ from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from msprbloc4.client.controllers.app import app, get_db
-from msprbloc4.client.models.models import Base
+from msprbloc4 import app, get_db
+from msprbloc4 import Base
 
 # 1) URL de connexion PostgreSQL pour la base de tests
 SQLALCHEMY_DATABASE_URL = "postgresql+psycopg2://openpg:openpgpwd@localhost:5432/client_test_db"

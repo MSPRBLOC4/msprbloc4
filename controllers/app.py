@@ -2,8 +2,8 @@ from fastapi import FastAPI, Depends, HTTPException
 from pydantic import BaseModel
 from typing import List
 from sqlalchemy.orm import Session
-from msprbloc4.client.models.db import  SessionLocal, init_db
-from msprbloc4.client.models.models import ClientModel
+from msprbloc4.models.db  import  SessionLocal, init_db
+from msprbloc4.models.models import ClientModel
 app = FastAPI(
     title="Client Service",
     description="Microservice de gestion des clients avec PostgreSQL",
